@@ -1,4 +1,8 @@
-Fork from [](https://github.com/sentry-kubernetes/charts). ** Only the `sentry` chart is mantained in this repository. **
+# NOTICE! ⚠️
+
+Fork from https://github.com/sentry-kubernetes/charts.
+
+**Only the `sentry` chart is mantained in this repository.**
 
 # Sentry helm charts
 
