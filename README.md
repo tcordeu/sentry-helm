@@ -1,3 +1,5 @@
+Fork from [](https://github.com/sentry-kubernetes/charts). ** Only the `sentry` chart is mantained in this repository. **
+
 # Sentry helm charts
 
 Sentry is a cross-platform crash reporting and aggregation platform.
