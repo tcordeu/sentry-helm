@@ -114,7 +114,7 @@ spec:
               {{- if .Values.kafka.enabled }}
               KAFKA_REPLICAS={{ .Values.kafka.replicaCount }}
               i=0; while [ $i -lt $KAFKA_REPLICAS ]; do
-                KAFKA_HOST={{ $kafkaHost }}-$i.{{ $kafkaHost }}-headless
+                KAFKA_HOST={{ $kafkaHost }}-controller-$i.{{ $kafkaHost }}-controller-headless
                 if ! nc -z "$KAFKA_HOST" {{ $kafkaPort }}; then
                   KAFKA_STATUS=0
                   echo "$KAFKA_HOST is not available yet"

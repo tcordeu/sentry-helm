@@ -16,6 +16,13 @@ Big thanks to the maintainers of the [deprecated chart](https://github.com/helm/
 
 For now the full list of values is not documented but you can get inspired by the values.yaml specific to each directory.
 
+## Upgrading from 20.x.x version of this Chart to 21.x.x
+- **BREAKING CHANGES**:
+    + `KRaft` is now the default coordinator instead of `Zookeeper`.
+
+- Bumped dependencies:
+    + kafka > 26.4.5 - Fixes Kraft support.
+
 ## Upgrading from 19.x.x version of this Chart to 20.x.x
 
 Bumped dependencies:

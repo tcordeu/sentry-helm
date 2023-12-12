@@ -1468,12 +1468,15 @@ kafka:
       - name: ingest-occurrences
       - name: snuba-spans
   zookeeper:
-    enabled: true
-  kraft:
     enabled: false
+  kraft:
+    enabled: true
   service:
     ports:
       client: 9092
+  listeners:
+    client:
+      protocol: PLAINTEXT
 
   ## Use this to enable an extra service account
   # serviceAccount:
