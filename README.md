@@ -24,6 +24,9 @@ For now the full list of values is not documented but you can get inspired by th
 - **BREAKING CHANGES**:
     + `KRaft` is now the default coordinator instead of `Zookeeper`.
 
+- _CHANGES_:
+    + You can now run `clickhouse` in a single node setup by specifying `clickhouse.singleNode: true`. Note that if this value is set, `zookeeper` becomes unnecessary and can be safely disabled.
+
 - Bumped dependencies:
     + kafka > 26.4.5 - Fixes Kraft support.
 
